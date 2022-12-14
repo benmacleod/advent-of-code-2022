@@ -5,9 +5,15 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
+    haml (6.1.1)
+      temple (>= 0.8.2)
+      thor
+      tilt
     io-console (0.5.11)
     irb (1.6.0)
       reline (>= 0.3.0)
+    prettier_print (1.1.0)
+    rbs (2.8.1)
     reline (0.3.1)
       io-console (~> 0.5)
     rspec (3.12.0)
@@ -23,14 +29,31 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
+    syntax_tree (5.0.1)
+      prettier_print (>= 1.1.0)
+    syntax_tree-haml (2.0.0)
+      haml (>= 5.2, != 6.0.0)
+      prettier_print (>= 1.0.0)
+      syntax_tree (>= 4.0.0)
+    syntax_tree-rbs (0.5.1)
+      prettier_print
+      rbs
+      syntax_tree (>= 2.0.1)
+    temple (0.9.1)
+    thor (1.2.1)
+    tilt (2.0.11)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   debug (>= 1.0.0)
+  prettier_print
   rspec
   rspec-expectations
+  syntax_tree
+  syntax_tree-haml
+  syntax_tree-rbs
 
 BUNDLED WITH
    2.3.8
